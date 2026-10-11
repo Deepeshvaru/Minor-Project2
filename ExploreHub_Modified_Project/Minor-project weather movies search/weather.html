@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather | NovaView</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/weather.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">✦</span>NovaView</a
+      ><button
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a
+        ><a class="active" href="weather.html">Weather</a
+        ><a href="movies.html">Movies</a><a href="about.html">About</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main class="inner-page">
+      <section class="page-intro">
+        <p class="eyebrow">LIVE CONDITIONS</p>
+        <h1>Weather <span>at a glance.</span></h1>
+        <p>Search for a city to see its current weather conditions.</p>
+      </section>
+      <section class="tool-panel">
+        <form id="weather-form" class="search-form">
+          <label class="sr-only" for="city-input">City name</label
+          ><input
+            id="city-input"
+            name="city"
+            placeholder="Enter a city, e.g. Pune"
+            required
+          /><button class="button button-primary" type="submit">
+            Search Weather
+          </button>
+        </form>
+        <p id="weather-status" class="status-message" role="status">
+          Enter a city to get Weather Info
+        </p>
+        <div id="weather-result" class="weather-result" hidden></div>
+      </section>
+    
+    </main>
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="index.html">✦ NovaView</a
+      ><span>Weather and movie discovery project</span
+      ><span>© <span data-year></span>NovaView</span>
+    </footer>
+  </body>
+</html>

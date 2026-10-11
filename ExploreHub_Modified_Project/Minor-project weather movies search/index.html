@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Your home for live weather and movie discovery.">
+  <title>NovaView | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">✦</span>NovaView</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="weather.html">Weather</a>
+      <a href="movies.html">Movies</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ONE PLACE. TWO DISCOVERIES.</p>
+        <h1>Explore the world.<br><span>Find your next story.</span></h1>
+        <p class="hero-text">Check the weather in any city and discover movies worth watching—all from one simple website.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="weather.html">Check Weather <span>→</span></a>
+          <a class="button button-secondary" href="movies.html">Explore Movies</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-one">☀</div><div class="orb orb-two">✦</div>
+        <div class="art-card weather-art"><span>WEATHER</span><strong>24°</strong><small>Make plans with confidence</small><div class="sun-icon">☀</div></div>
+        <div class="art-card movie-art"><span>TONIGHT'S PICK</span><div class="poster-shapes"><i></i><i></i><i></i></div><strong>Movie night?</strong><small>Find your next favourite</small></div>
+      </div>
+    </section>
+
+    <section class="section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">WHAT WOULD YOU LIKE TO DO?</p><h2>Choose your adventure</h2></div><p>Useful information and entertainment, just a click away.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card weather-feature">
+          <div class="feature-icon">☀</div><p class="card-kicker">LIVE WEATHER</p><h3>Know before you go</h3>
+          <p>Search a city to see current temperature, conditions, humidity and wind speed.</p>
+          <a class="text-link" href="weather.html">Open Weather App <span>↗</span></a>
+        </article>
+        <article class="feature-card movie-feature">
+          <div class="feature-icon">▶</div><p class="card-kicker">MOVIE DISCOVERY</p><h3>Find your next favourite</h3>
+          <p>Search for films and explore their posters, release years, ratings and details.</p>
+          <a class="text-link" href="movies.html">Open Movie Search <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="bottom-banner">
+      <div><p class="eyebrow">A SMALL PROJECT WITH BIG POSSIBILITIES</p><h2>Curious minds, start here.</h2><p>Learn about the project or send a message through our contact page.</p></div>
+      <a class="button button-light" href="about.html">About NovaView→</a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html">✦ NovaView</a><span>Weather and movie discovery project</span><span>© <span data-year></span> NovaView</span></footer>
+</body>
+</html>
